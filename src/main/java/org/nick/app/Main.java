@@ -28,9 +28,7 @@ public class Main {
 
             JAXBContext jaxbContext = JAXBContext.newInstance(Forms.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            System.out.println(xsr.getNamespaceContext().getNamespaceURI("ns"));
             JAXBElement<Forms> forms1 = jaxbUnmarshaller.unmarshal(xsr, Forms.class);
-            System.out.println(forms1.getName());
             forms = forms1.getValue();
         } catch (JAXBException | FileNotFoundException | XMLStreamException e) {
             e.printStackTrace();
