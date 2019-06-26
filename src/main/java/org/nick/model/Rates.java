@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 @XmlRootElement(name = "rates")
 public class Rates {
-    @XmlElement
+    @XmlElement(name = "rate")
     private ArrayList<Rate> rates;
 
     @Override
