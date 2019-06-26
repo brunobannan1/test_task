@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <forms>
+        <form mkgu-id="0" foreign-id="ticket-department-252-2017-12-12--0">
+            <data>
+                <user id="ticket-department-252-2017-12-12--0"/>
+                <service id="10000008589">Загранпаспорт</service>
+                <procedure/>
+                <authority id="10001298922"/>
+                <date>2017-12-11 18:00:00</date>
+                <received-date>2017-12-12 07:42:31</received-date>
+                <okato>53401373000</okato>
+            </data>
+            <rates>
+                <rate indicator-id="9" value-id="45">45</rate>
+                <rate indicator-id="10" value-id="49">49</rate>
+                <rate indicator-id="11" value-id="55">55</rate>
+                <rate indicator-id="12" value-id="60">60</rate>
+                <rate indicator-id="13" value-id="65">65</rate>
+            </rates>
+        </form>
+    </forms>

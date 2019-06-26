@@ -1,14 +1,21 @@
 package org.nick.model;
 
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-@XmlType(name = "forms")
+@XmlRootElement(name = "forms")
 public class Forms {
 
     @XmlElement(name = "form")
-    ArrayList<Form> forms;
+    private ArrayList<Form> forms;
+
+    @Override
+    public String toString() {
+        return "Forms{" +
+                "forms=" + forms +
+                '}';
+    }
 
     public Forms() {
     }
