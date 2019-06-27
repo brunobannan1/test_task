@@ -1,7 +1,6 @@
 package org.nick.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlValue;
 
@@ -17,6 +16,9 @@ public class Rate {
     @XmlValue
     private int rate;
 
+    public Rate() {
+    }
+
     @Override
     public String toString() {
         return "Rate{" +
@@ -24,8 +26,5 @@ public class Rate {
                 ", value=" + value +
                 ", rate=" + rate +
                 '}';
-    }
-
-    public Rate() {
     }
 }

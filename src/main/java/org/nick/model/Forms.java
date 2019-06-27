@@ -10,13 +10,13 @@ public class Forms {
     @XmlElement(name = "form")
     private ArrayList<Form> forms;
 
+    public Forms() {
+    }
+
     @Override
     public String toString() {
         return "Forms{" +
                 "forms=" + forms +
                 '}';
-    }
-
-    public Forms() {
     }
 }

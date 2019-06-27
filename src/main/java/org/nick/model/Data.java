@@ -21,6 +21,9 @@ public class Data {
     @XmlElement(name = "okato")
     private String okato;
 
+    public Data() {
+    }
+
     @Override
     public String toString() {
         return "Data{" +
@@ -32,8 +35,5 @@ public class Data {
                 ", receivedDate='" + receivedDate + '\'' +
                 ", okato='" + okato + '\'' +
                 '}';
-    }
-
-    public Data() {
     }
 }

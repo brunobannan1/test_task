@@ -9,14 +9,13 @@ public class Rates {
     @XmlElement(name = "rate")
     private ArrayList<Rate> rates;
 
+    public Rates() {
+    }
+
     @Override
     public String toString() {
         return "Rates{" +
                 "rates=" + rates +
                 '}';
-    }
-
-    public Rates() {
-
     }
 }

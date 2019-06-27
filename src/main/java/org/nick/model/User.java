@@ -1,7 +1,6 @@
 package org.nick.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlValue;
 
@@ -12,14 +11,14 @@ public class User {
     @XmlValue
     private String user;
 
+    public User() {
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id='" + id + '\'' +
                 ", user='" + user + '\'' +
                 '}';
-    }
-
-    public User() {
     }
 }
