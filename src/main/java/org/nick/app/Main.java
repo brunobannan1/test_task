@@ -2,6 +2,7 @@ package org.nick.app;
 
 import org.hibernate.Session;
 import org.nick.model.Forms;
+import org.nick.model.User;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -39,7 +40,9 @@ public class Main {
         Session session = HibernateConfiguration.getSession();
         System.out.println(session.isOpen());
         session.beginTransaction();
-        session.createNativeQuery("CREATE TABLE test_task_table()").executeUpdate();
+        //session.createNativeQuery("CREATE TABLE test_task_table()").executeUpdate();
+        session.save(new User("0001","Nikolay"));
+        session.save(new User("0002","Nikolay1"));
         session.getTransaction().commit();
         session.close();
         System.out.println(forms.toString());

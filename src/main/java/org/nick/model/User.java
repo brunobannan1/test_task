@@ -1,22 +1,30 @@
 package org.nick.model;
 
-import org.hibernate.annotations.Table;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlValue;
 
 @Entity
-@Table(appliesTo = "user")
+@Table(name = "xml_user")
 @XmlRootElement(name = "user")
 public class User {
+    @Id
     @XmlAttribute(name = "id")
     private String id;
+    @Column(name = "username")
     @XmlValue
     private String user;
 
     public User() {
+    }
+
+    public User(String id, String user) {
+        this.id = id;
+        this.user = user;
     }
 
     @Override
