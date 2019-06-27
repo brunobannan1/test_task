@@ -1,5 +1,6 @@
 package org.nick.model;
 
+import javax.persistence.JoinColumn;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -12,6 +13,8 @@ public class Data {
     private Service service;
     @XmlElement(name = "procedure")
     private int procedure;
+
+    @JoinColumn(name = "authority_id")
     @XmlElement(name = "authority")
     private Authority authority;
     @XmlElement(name = "date")

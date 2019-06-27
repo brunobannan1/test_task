@@ -41,8 +41,8 @@ public class Main {
         System.out.println(session.isOpen());
         session.beginTransaction();
         //session.createNativeQuery("CREATE TABLE test_task_table()").executeUpdate();
-        session.save(new User("0001","Nikolay"));
-        session.save(new User("0002","Nikolay1"));
+        session.save(new User("0001", "Nikolay"));
+        session.save(new User("0002", "Nikolay1"));
         session.getTransaction().commit();
         session.close();
         System.out.println(forms.toString());

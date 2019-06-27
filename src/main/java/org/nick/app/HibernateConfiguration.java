@@ -1,10 +1,9 @@
 package org.nick.app;
 
-import org.nick.model.*;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.nick.model.User;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,6 +12,9 @@ import java.util.Properties;
 public class HibernateConfiguration {
 
     public static SessionFactory factory;
+
+    private HibernateConfiguration() {
+    }
 
     public static synchronized SessionFactory getSessionFactory() {
         Properties properties = new Properties();
@@ -43,8 +45,5 @@ public class HibernateConfiguration {
 
     public static synchronized Session getSession() {
         return getSessionFactory().openSession();
-    }
-
-    private HibernateConfiguration() {
     }
 }
