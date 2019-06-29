@@ -1,12 +1,17 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.*;
 
 @Entity
 @XmlRootElement(name = "data")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Data {
 
     @Id
@@ -44,20 +49,4 @@ public class Data {
     @OneToOne(mappedBy = "data", cascade = CascadeType.ALL)
     @XmlTransient
     private Form form;
-
-    public Data() {
-    }
-
-    @Override
-    public String toString() {
-        return "Data{" +
-                "user=" + user +
-                ", service=" + service +
-                ", procedure=" + procedure +
-                ", authority=" + authority +
-                ", date='" + date + '\'' +
-                ", receivedDate='" + receivedDate + '\'' +
-                ", okato='" + okato + '\'' +
-                '}';
-    }
 }

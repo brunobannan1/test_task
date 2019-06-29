@@ -1,17 +1,21 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @Entity
 @XmlRootElement(name = "rate")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Rate {
     @Id
     @Column(name = "indicator_id")
@@ -27,16 +31,4 @@ public class Rate {
     @ManyToMany(mappedBy = "rates")
     @XmlTransient
     private List<Rates> rates;
-
-    public Rate() {
-    }
-
-    @Override
-    public String toString() {
-        return "Rate{" +
-                "indicatorId=" + indicatorId +
-                ", value=" + value +
-                ", rate=" + rate +
-                '}';
-    }
 }

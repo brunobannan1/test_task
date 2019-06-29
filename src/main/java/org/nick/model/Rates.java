@@ -1,14 +1,19 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @Entity
 @Table(name = "rates")
 @XmlRootElement(name = "rates")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Rates {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,15 +32,4 @@ public class Rates {
     @OneToOne(mappedBy = "rates")
     @XmlTransient
     private Form form;
-
-
-    public Rates() {
-    }
-
-    @Override
-    public String toString() {
-        return "Rates{" +
-                "rates=" + rates +
-                '}';
-    }
 }

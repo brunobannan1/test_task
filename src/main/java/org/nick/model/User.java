@@ -1,15 +1,19 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @Entity
 @Table(name = "xml_user")
 @XmlRootElement(name = "user")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @XmlAttribute(name = "id")
@@ -21,12 +25,4 @@ public class User {
     @OneToMany(mappedBy = "user")
     @XmlTransient
     private List<Data> data;
-
-    public User() {
-    }
-
-    public User(String id, String user) {
-        this.id = id;
-        this.user = user;
-    }
 }

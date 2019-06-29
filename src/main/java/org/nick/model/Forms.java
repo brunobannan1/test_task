@@ -1,14 +1,19 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
 @Entity
 @Table(name = "forms")
 @XmlRootElement(name = "forms")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Forms {
 
     @Id
@@ -19,14 +24,4 @@ public class Forms {
     @OneToMany(mappedBy = "forms")
     @XmlElement(name = "form")
     private List<Form> forms;
-
-    public Forms() {
-    }
-
-    @Override
-    public String toString() {
-        return "Forms{" +
-                "forms=" + forms +
-                '}';
-    }
 }

@@ -1,14 +1,18 @@
 package org.nick.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.*;
 
 @Entity
 @Table(name = "form")
 @XmlRootElement(name = "form")
+@XmlAccessorType(XmlAccessType.FIELD)
+@lombok.Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Form {
     @Id
     @Column(name = "id")
@@ -32,14 +36,4 @@ public class Form {
     @JoinColumn(name = "forms_id", nullable = false)
     @XmlTransient
     private Forms forms;
-
-    @Override
-    public String toString() {
-        return "Form{" +
-                "mkguId=" + mkguId +
-                ", foreignId=" + foreignId +
-                ", data=" + data +
-                ", rates=" + rates +
-                '}';
-    }
 }
