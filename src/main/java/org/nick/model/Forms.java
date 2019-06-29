@@ -1,9 +1,6 @@
 package org.nick.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -19,6 +16,7 @@ public class Forms {
     @XmlTransient
     private int id;
 
+    @OneToMany(mappedBy = "forms")
     @XmlElement(name = "form")
     private ArrayList<Form> forms;
 

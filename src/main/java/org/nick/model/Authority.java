@@ -11,10 +11,10 @@ import javax.xml.bind.annotation.XmlValue;
 @Table(name = "authority")
 @XmlRootElement(name = "authority")
 public class Authority {
-
     @Id
     @XmlAttribute(name = "id")
     private int id;
+
     @XmlValue
     private String authority;
 

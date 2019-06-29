@@ -10,7 +10,6 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "form")
 @XmlRootElement(name = "form")
 public class Form {
-
     @Id
     @Column(name = "id")
     @XmlAttribute(name = "mkgu-id")
@@ -30,7 +29,7 @@ public class Form {
     private Rates rates;
 
     @ManyToOne
-    @JoinColumn(name = "forms_id")
+    @JoinColumn(name = "forms_id", nullable = false)
     @XmlTransient
     private Forms forms;
 
