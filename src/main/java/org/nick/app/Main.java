@@ -39,7 +39,7 @@ public class Main {
         Session session = HibernateConfiguration.getSession();
         System.out.println(session.isOpen());
         session.beginTransaction();
-        session.save(forms);
+        session.persist(forms);
         session.getTransaction().commit();
         session.close();
         System.out.println(forms.toString());

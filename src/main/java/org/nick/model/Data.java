@@ -14,12 +14,12 @@ public class Data {
     @XmlTransient
     private int id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", nullable = false)
     @XmlElement(name = "user")
     private User user;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "service_id", nullable = false)
     @XmlElement(name = "service")
     private Service service;
@@ -27,7 +27,7 @@ public class Data {
     @XmlElement(name = "procedure")
     private int procedure;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "authority_id", nullable = false)
     @XmlElement(name = "authority")
     private Authority authority;
@@ -41,7 +41,7 @@ public class Data {
     @XmlElement(name = "okato")
     private String okato;
 
-    @OneToOne(mappedBy = "data")
+    @OneToOne(mappedBy = "data", cascade = CascadeType.ALL)
     @XmlTransient
     private Form form;
 

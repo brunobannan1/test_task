@@ -28,7 +28,7 @@ public class Form {
     @XmlElement(name = "rates")
     private Rates rates;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "forms_id", nullable = false)
     @XmlTransient
     private Forms forms;
