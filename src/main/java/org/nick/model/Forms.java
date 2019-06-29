@@ -4,7 +4,6 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,7 +12,7 @@ import java.util.List;
 public class Forms {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @XmlTransient
     private int id;
 
@@ -22,7 +21,6 @@ public class Forms {
     private List<Form> forms;
 
     public Forms() {
-        this.id = -1;
     }
 
     @Override

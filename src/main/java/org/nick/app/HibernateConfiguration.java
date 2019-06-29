@@ -32,7 +32,7 @@ public class HibernateConfiguration {
                         .setProperty("hibernate.connection.password", dbPassword)
                         .setProperty("hibernate.connection.driver_class", driverClassName)
                         .setProperty("hibernate.dialect", driverDialect)
-                        .setProperty("hibernate.hbm2ddl.auto", "create")
+                        .setProperty("hibernate.hbm2ddl.auto", "update")
                         .setProperty("show_sql", "true")
                         .addAnnotatedClass(Authority.class)
                         .addAnnotatedClass(Data.class)

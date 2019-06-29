@@ -2,7 +2,6 @@ package org.nick.app;
 
 import org.hibernate.Session;
 import org.nick.model.Forms;
-import org.nick.model.User;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;

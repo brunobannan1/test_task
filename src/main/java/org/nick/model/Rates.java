@@ -4,7 +4,6 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -12,7 +11,7 @@ import java.util.List;
 @XmlRootElement(name = "rates")
 public class Rates {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @XmlTransient
     private int id;
 
