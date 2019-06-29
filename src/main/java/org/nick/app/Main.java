@@ -40,9 +40,7 @@ public class Main {
         Session session = HibernateConfiguration.getSession();
         System.out.println(session.isOpen());
         session.beginTransaction();
-        //session.createNativeQuery("CREATE TABLE test_task_table()").executeUpdate();
-        session.save(new User("0001", "Nikolay"));
-        session.save(new User("0002", "Nikolay1"));
+        session.save(forms);
         session.getTransaction().commit();
         session.close();
         System.out.println(forms.toString());

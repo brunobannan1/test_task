@@ -1,11 +1,12 @@
 package org.nick.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "authority")
@@ -17,6 +18,10 @@ public class Authority {
 
     @XmlValue
     private String authority;
+
+    @OneToMany(mappedBy = "authority")
+    @XmlTransient
+    private List<Data> data;
 
     public Authority() {
     }

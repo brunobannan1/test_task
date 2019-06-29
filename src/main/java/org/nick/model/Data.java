@@ -5,21 +5,22 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+@Entity
 @XmlRootElement(name = "data")
 public class Data {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @XmlTransient
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     @XmlElement(name = "user")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "service_id")
+    @JoinColumn(name = "service_id", nullable = false)
     @XmlElement(name = "service")
     private Service service;
 
@@ -27,7 +28,7 @@ public class Data {
     private int procedure;
 
     @ManyToOne
-    @JoinColumn(name = "authority_id")
+    @JoinColumn(name = "authority_id", nullable = false)
     @XmlElement(name = "authority")
     private Authority authority;
 

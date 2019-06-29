@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "forms")
@@ -18,7 +19,7 @@ public class Forms {
 
     @OneToMany(mappedBy = "forms")
     @XmlElement(name = "form")
-    private ArrayList<Form> forms;
+    private List<Form> forms;
 
     public Forms() {
         this.id = -1;

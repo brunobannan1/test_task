@@ -3,7 +3,7 @@ package org.nick.app;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.nick.model.User;
+import org.nick.model.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,6 +34,13 @@ public class HibernateConfiguration {
                         .setProperty("hibernate.dialect", driverDialect)
                         .setProperty("hibernate.hbm2ddl.auto", "create")
                         .setProperty("show_sql", "true")
+                        .addAnnotatedClass(Authority.class)
+                        .addAnnotatedClass(Data.class)
+                        .addAnnotatedClass(Form.class)
+                        .addAnnotatedClass(Forms.class)
+                        .addAnnotatedClass(Rate.class)
+                        .addAnnotatedClass(Rates.class)
+                        .addAnnotatedClass(Service.class)
                         .addAnnotatedClass(User.class)
                         .buildSessionFactory();
             }

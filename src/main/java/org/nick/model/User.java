@@ -1,12 +1,11 @@
 package org.nick.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
+import java.util.List;
 
 @Entity
 @Table(name = "xml_user")
@@ -19,19 +18,15 @@ public class User {
     @XmlValue
     private String user;
 
+    @OneToMany(mappedBy = "user")
+    @XmlTransient
+    private List<Data> data;
+
     public User() {
     }
 
     public User(String id, String user) {
         this.id = id;
         this.user = user;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", user='" + user + '\'' +
-                '}';
     }
 }
