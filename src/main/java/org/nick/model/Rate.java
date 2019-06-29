@@ -1,12 +1,18 @@
 package org.nick.model;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
+import java.util.ArrayList;
 
 @XmlRootElement(name = "rate")
 public class Rate {
-
+    @Id
+    @Column(name = "indicator_id")
     @XmlAttribute(name = "indicator-id")
     private int indicatorId;
 
@@ -15,6 +21,10 @@ public class Rate {
 
     @XmlValue
     private int rate;
+
+    @ManyToMany(mappedBy = "rates")
+    @XmlTransient
+    private ArrayList<Rates> rates;
 
     public Rate() {
     }

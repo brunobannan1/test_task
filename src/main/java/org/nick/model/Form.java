@@ -18,13 +18,13 @@ public class Form {
     @XmlAttribute(name = "foreign-id")
     private String foreignId;
 
-    @OneToOne
-    @JoinColumn(name = "fk_data_id", referencedColumnName = "data_id")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_data_id", referencedColumnName = "id")
     @XmlElement(name = "data")
     private Data data;
 
-    @OneToOne
-    @JoinColumn(name = "fk_rates_id", referencedColumnName = "rates_id")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_rates_id", referencedColumnName = "id")
     @XmlElement(name = "rates")
     private Rates rates;
 

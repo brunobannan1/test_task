@@ -1,12 +1,18 @@
 package org.nick.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name = "data")
 public class Data {
+
+    @Id
+    @GeneratedValue
+    @XmlTransient
+    private int id;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     @XmlElement(name = "user")
@@ -33,6 +39,10 @@ public class Data {
 
     @XmlElement(name = "okato")
     private String okato;
+
+    @OneToOne(mappedBy = "data")
+    @XmlTransient
+    private Form form;
 
     public Data() {
     }
