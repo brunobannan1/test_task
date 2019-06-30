@@ -35,6 +35,7 @@ public class HibernateConfiguration {
                         .setProperty("hibernate.hbm2ddl.auto", "update")
                         .setProperty("show_sql", "true")
                         .setProperty("format_sql", "true")
+                        .setProperty("hibernate.enable_lazy_load_no_trans", "true")
                         .addAnnotatedClass(Authority.class)
                         .addAnnotatedClass(Data.class)
                         .addAnnotatedClass(Form.class)

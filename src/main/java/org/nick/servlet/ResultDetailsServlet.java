@@ -1,7 +1,11 @@
 package org.nick.servlet;
 
 import org.nick.dao.FormsDaoImpl;
+import org.nick.dao.FormsDataAsList;
 import org.nick.model.Forms;
+import org.nick.view.TemplateUtility;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,8 +32,20 @@ public class ResultDetailsServlet extends HttpServlet {
         success = Boolean.parseBoolean(successAsString);
 
         forms = formsDao.find(formsId);
+        formsDao.fillForms(forms);
 
+        FormsDataAsList formsDataAsList = new FormsDataAsList();
+        formsDataAsList.retrieve(forms);
 
-
+        TemplateEngine te = TemplateUtility.setup();
+        Context context = new Context();
+        context.setVariable("dataList", formsDataAsList.getDataList());
+        context.setVariable("rateList", formsDataAsList.getRateList());
+        context.setVariable("formList", formsDataAsList.getFormList());
+        context.setVariable("id", forms.getId());
+        context.setVariable("success", forms.getSuccess());
+        context.setVariable("dateUpload", forms.getUploadDate());
+        req.setCharacterEncoding("UTF-8");
+        te.process("ResultDetails", context, resp.getWriter());
     }
 }

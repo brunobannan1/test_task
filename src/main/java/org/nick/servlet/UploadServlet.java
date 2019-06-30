@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.exception.ConstraintViolationException;
 import org.nick.app.HibernateConfiguration;
 import org.nick.dao.FormsDaoImpl;
+import org.nick.dao.FormsDataAsList;
 import org.nick.model.*;
 import org.nick.view.TemplateUtility;
 import org.thymeleaf.TemplateEngine;
@@ -60,22 +61,10 @@ public class UploadServlet extends HttpServlet {
             formsDao.save(forms);
             TemplateEngine te = TemplateUtility.setup();
             Context context = new Context();
-            List<Form> formList = forms.getForms();
-            List<Data> dataList = new ArrayList<>();
-            List<Rates> ratesList = new ArrayList<>();
-            List<Rate> rateList = new ArrayList<>();
-            for (Form form : formList) {
-                dataList.add(form.getData());
-                ratesList.add(form.getRates());
-            }
-
-            for (Rates rates : ratesList) {
-                for (int i = 0; i < rates.getRates().size(); i++) {
-                    rateList.add(rates.getRates().get(i));
-                }
-            }
-            context.setVariable("dataList", dataList);
-            context.setVariable("rateList", rateList);
+            FormsDataAsList formsDataAsList = new FormsDataAsList();
+            formsDataAsList.retrieve(forms);
+            context.setVariable("dataList", formsDataAsList.getDataList());
+            context.setVariable("rateList", formsDataAsList.getRateList());
             req.setCharacterEncoding("UTF-8");
             te.process("UploadDetails", context, resp.getWriter());
             Session session = HibernateConfiguration.openSession();

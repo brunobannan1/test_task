@@ -11,9 +11,9 @@ public class FormsDataAsList {
     private List<Rates> ratesList = new ArrayList<>();
     private List<Rate> rateList = new ArrayList<>();
     private List<Form> formList = new ArrayList<>();
-    private int formsId;
+    /*private int formsId;
     private boolean success;
-    private String dateUpload;
+    private String dateUpload;*/
 
     public FormsDataAsList retrieve(Forms forms) {
         List<Form> formList = forms.getForms();
@@ -27,9 +27,16 @@ public class FormsDataAsList {
                 rateList.add(rates.getRates().get(i));
             }
         }
-        formsId = forms.getId();
-        success = forms.getSuccess();
-        dateUpload = forms.getUploadDate();
+        /*try {
+            formsId = forms.getId();
+            success = forms.getSuccess();
+            dateUpload = forms.getUploadDate();
+        } catch (NullPointerException e){
+            e.printStackTrace();
+            formsId = -1;
+            success = Boolean.FALSE;
+            dateUpload = "unknown";
+        }*/
         return this;
     }
 
