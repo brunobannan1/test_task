@@ -34,6 +34,7 @@ public class HibernateConfiguration {
                         .setProperty("hibernate.dialect", driverDialect)
                         .setProperty("hibernate.hbm2ddl.auto", "update")
                         .setProperty("show_sql", "true")
+                        .setProperty("format_sql", "true")
                         .addAnnotatedClass(Authority.class)
                         .addAnnotatedClass(Data.class)
                         .addAnnotatedClass(Form.class)
@@ -50,7 +51,7 @@ public class HibernateConfiguration {
         return factory;
     }
 
-    public static synchronized Session getSession() {
+    public static synchronized Session openSession() {
         return getSessionFactory().openSession();
     }
 }

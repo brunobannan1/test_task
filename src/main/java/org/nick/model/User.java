@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,5 +25,13 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     @XmlTransient
-    private List<Data> data;
+    private List<Data> data = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", user='" + user + '\'' +
+                '}';
+    }
 }

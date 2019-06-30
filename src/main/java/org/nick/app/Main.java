@@ -2,6 +2,7 @@ package org.nick.app;
 
 import org.hibernate.Session;
 import org.nick.model.Forms;
+import org.nick.org.nick.dao.FormsDaoImpl;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -36,14 +37,15 @@ public class Main {
         } catch (JAXBException | FileNotFoundException | XMLStreamException e) {
             e.printStackTrace();
         }
-        Session session = HibernateConfiguration.getSession();
-        System.out.println(session.isOpen());
-        session.beginTransaction();
-        session.persist(forms);
-        session.getTransaction().commit();
+        Session session = HibernateConfiguration.openSession();
+
+        /*AuthorityDaoImpl authorityDao = new AuthorityDaoImpl();
+        Authority a = authorityDao.find(1);
+        List ars = authorityDao.findAll();*/
+        FormsDaoImpl formsDao = new FormsDaoImpl();
+        Forms filledForms = formsDao.fillForms(forms);
+        formsDao.save(forms);
+        int i = 0;
         session.close();
-        System.out.println(forms.toString());
-        //
-        //
     }
 }

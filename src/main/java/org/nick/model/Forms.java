@@ -24,4 +24,11 @@ public class Forms {
     @OneToMany(mappedBy = "forms")
     @XmlElement(name = "form")
     private List<Form> forms;
+
+    @Override
+    public String toString() {
+        return "Forms{" +
+                "id=" + id +
+                '}';
+    }
 }

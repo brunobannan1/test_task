@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -27,5 +28,13 @@ public class Service {
 
     @OneToMany(mappedBy = "service")
     @XmlTransient
-    private List<Data> data;
+    private List<Data> data = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Service{" +
+                "id=" + id +
+                ", service='" + service + '\'' +
+                '}';
+    }
 }

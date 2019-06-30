@@ -72,7 +72,6 @@
             <scope>provided</scope>
         </dependency>
 
-
         <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core &ndash;&gt;-->
         <!--        <dependency>-->
         <!--            <groupId>org.hibernate.orm</groupId>-->

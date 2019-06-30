@@ -36,4 +36,14 @@ public class Form {
     @JoinColumn(name = "forms_id", nullable = false)
     @XmlTransient
     private Forms forms;
+
+    @Override
+    public String toString() {
+        return "Form{" +
+                "mkguId=" + mkguId +
+                ", foreignId='" + foreignId + '\'' +
+                ", data=" + data +
+                ", rates=" + rates +
+                '}';
+    }
 }

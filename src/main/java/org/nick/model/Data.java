@@ -49,4 +49,18 @@ public class Data {
     @OneToOne(mappedBy = "data", cascade = CascadeType.ALL)
     @XmlTransient
     private Form form;
+
+    @Override
+    public String toString() {
+        return "Data{" +
+                "id=" + id +
+                ", user=" + user +
+                ", service=" + service +
+                ", procedure=" + procedure +
+                ", authority=" + authority +
+                ", date='" + date + '\'' +
+                ", receivedDate='" + receivedDate + '\'' +
+                ", okato='" + okato + '\'' +
+                '}';
+    }
 }

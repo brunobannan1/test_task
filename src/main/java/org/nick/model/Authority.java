@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,5 +25,13 @@ public class Authority {
 
     @OneToMany(mappedBy = "authority", cascade = CascadeType.ALL)
     @XmlTransient
-    private List<Data> data;
+    private List<Data> data = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Authority{" +
+                "id=" + id +
+                ", authority='" + authority + '\'' +
+                '}';
+    }
 }

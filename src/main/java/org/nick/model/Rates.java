@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,12 +25,20 @@ public class Rates {
     @JoinTable(
             name = "rates_rate",
             joinColumns = {@JoinColumn(name = "rates_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "rate_id", referencedColumnName = "indicator_id")}
+            inverseJoinColumns = {@JoinColumn(name = "rate_id", referencedColumnName = "id")}
     )
     @XmlElement(name = "rate")
-    private List<Rate> rates;
+    private List<Rate> rates = new ArrayList<>();
 
     @OneToOne(mappedBy = "rates")
     @XmlTransient
     private Form form;
+
+    @Override
+    public String toString() {
+        return "Rates{" +
+                "id=" + id +
+                ", rates=" + rates +
+                '}';
+    }
 }

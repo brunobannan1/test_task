@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,7 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Rate {
     @Id
-    @Column(name = "indicator_id")
+    @Column(name = "id")
     @XmlAttribute(name = "indicator-id")
     private int indicatorId;
 
@@ -30,5 +31,14 @@ public class Rate {
 
     @ManyToMany(mappedBy = "rates")
     @XmlTransient
-    private List<Rates> rates;
+    private List<Rates> rates = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Rate{" +
+                "indicatorId=" + indicatorId +
+                ", value=" + value +
+                ", rate=" + rate +
+                '}';
+    }
 }
