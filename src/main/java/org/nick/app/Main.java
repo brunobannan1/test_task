@@ -1,8 +1,8 @@
 package org.nick.app;
 
 import org.hibernate.Session;
-import org.nick.model.Forms;
 import org.nick.dao.FormsDaoImpl;
+import org.nick.model.Forms;
 
 public class Main {
     static Forms forms = null;

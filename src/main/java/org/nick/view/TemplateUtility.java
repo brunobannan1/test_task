@@ -4,8 +4,6 @@ import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-import java.net.URL;
-
 public class TemplateUtility {
 
     public static TemplateEngine setup() {

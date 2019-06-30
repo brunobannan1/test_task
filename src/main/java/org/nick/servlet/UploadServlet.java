@@ -1,11 +1,10 @@
 package org.nick.servlet;
 
 import org.hibernate.Session;
-import org.hibernate.exception.ConstraintViolationException;
 import org.nick.app.HibernateConfiguration;
 import org.nick.dao.FormsDaoImpl;
 import org.nick.dao.FormsDataAsList;
-import org.nick.model.*;
+import org.nick.model.Forms;
 import org.nick.view.TemplateUtility;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
@@ -19,22 +18,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet("/upload")
 @MultipartConfig
 public class UploadServlet extends HttpServlet {
-    private Forms forms;
     FormsDaoImpl formsDao = new FormsDaoImpl();
+    private Forms forms;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

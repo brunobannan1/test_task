@@ -5,7 +5,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.nick.model.*;
 
-import java.io.IOException;
 import java.util.Properties;
 
 public class HibernateConfiguration {

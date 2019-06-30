@@ -36,7 +36,7 @@
             <rate indicator-id="13" value-id="65">65</rate>
         </rates>
     </form>
-<form mkgu-id="4" foreign-id="sdfgreter">
+    <form mkgu-id="4" foreign-id="sdfgreter">
         <data>
             <user id="id=sdfgreter"/>
             <service id="1000">паспорт</service>

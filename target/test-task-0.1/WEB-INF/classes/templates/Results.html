@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Results</h1>
-<table style="float: left" border="1">
+<table border="1" style="float: left">
     <th:block th:each="form : ${listForms}">
         <tr>
             <td>
@@ -21,16 +21,19 @@
         </tr>
         <tr>
             <td>
-                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}" th:text="${form.getId()}"/>
+                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}"
+                   th:text="${form.getId()}"/>
             </td>
             <td>
-                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}" th:text="${form.getUploadDate()}"/>
+                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}"
+                   th:text="${form.getUploadDate()}"/>
             </td>
             <td>
-                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}" th:text="${form.getSuccess()}"/>
+                <a th:href="${'details?'+'id='+form.getId()+'&date='+form.getUploadDate()+'&success='+form.getSuccess()}"
+                   th:text="${form.getSuccess()}"/>
             </td>
         </tr>
-        </th:block>
+    </th:block>
 </table>
 </body>
 </html>

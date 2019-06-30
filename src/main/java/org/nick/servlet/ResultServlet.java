@@ -16,8 +16,8 @@ import java.util.List;
 
 @WebServlet("/results")
 public class ResultServlet extends HttpServlet {
-    private Forms forms;
     FormsDaoImpl formsDao = new FormsDaoImpl();
+    private Forms forms;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
