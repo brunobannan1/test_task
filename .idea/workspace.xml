@@ -6,27 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25711630-9438-4582-8aab-6bc99c23948a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/storage_v2/_src_/database/test_task_db.y8qoVw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/storage_v2/_src_/database/test_task_db.y8qoVw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/dao/FormsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/dao/FormsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/model/Forms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/model/Forms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/servlet/ResultDetailsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/servlet/ResultDetailsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/dao/FormsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/dao/FormsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/model/Forms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/model/Forms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/ResultDetailsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/ResultDetailsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
-    </list>
+    <list default="true" id="25711630-9438-4582-8aab-6bc99c23948a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,6 +62,15 @@
         <item name="test_task_db@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="test_task_db: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test_task_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test_task_db: database" type="162271b6:PgImplModel$Database" />
         <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
@@ -105,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+            <state relative-caret-position="680">
+              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,9 +167,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" />
       </list>
     </option>
   </component>
@@ -507,7 +496,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128557000" />
+    <option name="totallyTimeSpent" value="128937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,7 +510,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.27985075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.27985075" />
       <window_info id="Structure" order="1" sideWeight="0.5022625" side_tool="true" weight="0.2553305" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,7 +522,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Application Servers" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.28169015" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.28169015" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -542,7 +531,7 @@
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" weight="0.21343446" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" visible="true" weight="0.21343446" />
       <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32936078" />
@@ -552,7 +541,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.18123667" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18123667" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
@@ -605,15 +594,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rate">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rates">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
@@ -1074,10 +1054,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        <state relative-caret-position="680">
+          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
