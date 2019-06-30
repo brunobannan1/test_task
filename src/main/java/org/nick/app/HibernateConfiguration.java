@@ -5,7 +5,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.nick.model.*;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -19,11 +18,12 @@ public class HibernateConfiguration {
     public static synchronized SessionFactory getSessionFactory() {
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("db.properties"));
+            properties.load(HibernateConfiguration.class.getClassLoader().getResourceAsStream("db.properties"));
             String dbUrl = properties.getProperty("db.url");
             String dbUsername = properties.getProperty("db.username");
             String dbPassword = properties.getProperty("db.password");
             String driverClassName = properties.getProperty("db.driverClassName");
+            Class.forName(properties.getProperty("db.driverClassName"));
             String driverDialect = properties.getProperty("db.dialect");
             if (factory == null) {
                 factory = new Configuration()
@@ -45,7 +45,7 @@ public class HibernateConfiguration {
                         .addAnnotatedClass(User.class)
                         .buildSessionFactory();
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return factory;

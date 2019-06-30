@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -23,7 +24,14 @@ public class Forms {
 
     @OneToMany(mappedBy = "forms")
     @XmlElement(name = "form")
-    private List<Form> forms;
+    private List<Form> forms = new ArrayList<>();
+
+    @XmlTransient
+    private String uploadDate;
+
+    @XmlTransient
+    private Boolean success;
+
 
     @Override
     public String toString() {

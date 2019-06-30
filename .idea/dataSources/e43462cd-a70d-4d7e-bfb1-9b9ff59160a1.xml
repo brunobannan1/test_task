@@ -9,10 +9,10 @@
       <StateNumber>570</StateNumber>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>121366</IntrospectionStateNumber>
-      <Relations>sequence|table|16403|16405|1
-sequence|table|28376|28378|1
-sequence|table|28360|28362|1
+      <Relations>sequence|table|28360|28362|1
 sequence|table|28368|28370|1
+sequence|table|28376|28378|1
+sequence|table|16403|16405|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -26,7 +26,7 @@ sequence|table|28368|28370|1
       <ObjectId>28454</ObjectId>
       <StateNumber>121360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>123126</IntrospectionStateNumber>
+      <IntrospectionStateNumber>125118</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
@@ -118,7 +118,7 @@ sequence|table|28368|28370|1
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>123127</IntrospectionStateNumber>
+      <IntrospectionStateNumber>125119</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>

@@ -40,6 +40,7 @@ public class FormsDaoImpl implements Dao<Forms> {
 
     @Override
     public void save(Forms model) {
+        fillForms(model);
         FormDaoImpl formDao = new FormDaoImpl();
         List<Form> list = model.getForms();
         for (Form f : list) {

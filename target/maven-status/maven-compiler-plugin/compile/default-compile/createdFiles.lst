@@ -1,0 +1,17 @@
+org\nick\app\HibernateConfiguration.class
+org\nick\model\User.class
+org\nick\model\Rate.class
+org\nick\model\Rates.class
+org\nick\model\Data.class
+org\nick\view\TemplateUtility.class
+org\nick\dao\Dao.class
+org\nick\servlet\GreetingsServlet.class
+org\nick\dao\FormDaoImpl.class
+org\nick\model\Form.class
+org\nick\model\Authority.class
+org\nick\model\Forms.class
+org\nick\app\Main.class
+org\nick\dao\AuthorityDaoImpl.class
+org\nick\dao\FormsDaoImpl.class
+org\nick\servlet\UploadServlet.class
+org\nick\model\Service.class
