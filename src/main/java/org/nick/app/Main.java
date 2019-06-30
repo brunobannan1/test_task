@@ -2,7 +2,7 @@ package org.nick.app;
 
 import org.hibernate.Session;
 import org.nick.model.Forms;
-import org.nick.org.nick.dao.FormsDaoImpl;
+import org.nick.dao.FormsDaoImpl;
 
 public class Main {
     static Forms forms = null;
