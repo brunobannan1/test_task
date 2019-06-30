@@ -1,7 +1,10 @@
 package org.nick.dao;
 
+import org.hibernate.Session;
+import org.nick.app.HibernateConfiguration;
 import org.nick.model.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class FormsDaoImpl implements Dao<Forms> {
@@ -35,7 +38,14 @@ public class FormsDaoImpl implements Dao<Forms> {
 
     @Override
     public Forms find(Integer id) {
-        return null;
+        Session session = HibernateConfiguration.openSession();
+        session.beginTransaction();
+        Forms forms = session.createQuery("from Forms forms where forms.id = :id", Forms.class)
+                .setParameter("id", id)
+                .getSingleResult();
+        session.getTransaction().commit();
+        session.close();
+        return forms;
     }
 
     @Override
@@ -60,6 +70,11 @@ public class FormsDaoImpl implements Dao<Forms> {
 
     @Override
     public List<Forms> findAll() {
-        return null;
+        Session session = HibernateConfiguration.openSession();
+        session.beginTransaction();
+        List<Forms> list = session.createQuery("from Forms forms",Forms.class).getResultList();
+        session.getTransaction().commit();
+        session.close();
+        return list;
     }
 }

@@ -7,44 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25711630-9438-4582-8aab-6bc99c23948a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/nick/view/TemplateUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/storage_v2/_src_/database/test_task_db.y8qoVw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/storage_v2/_src_/database/test_task_db.y8qoVw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/TestTask.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/app/HibernateConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/app/HibernateConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/nick/dao/FormsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/dao/FormsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/model/Forms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/model/Forms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/nick/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/nick/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-task-0.1.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/META-INF/TestTask.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/app/HibernateConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/app/HibernateConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/dao/FormsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/dao/FormsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/model/Forms.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/model/Forms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/classes/org/nick/servlet/UploadServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/ST4-4.0.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/antlr-runtime-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/antlr4-4.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/antlr4-runtime-4.7.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/byte-buddy-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/hibernate-core-6.0.0.Alpha2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/icu4j-58.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/javax.json-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/org.abego.treelayout.core-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-task-0.1/WEB-INF/lib/slf4j-api-1.7.26.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -129,30 +103,12 @@
     <favorites_list name="testtask" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/GreetingsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+            <state relative-caret-position="336">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,13 +116,94 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Results.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="75" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#0#38#1" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/forms">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-              <filtering>
-                <filter text="" />
-              </filtering>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Form.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -177,8 +214,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -222,17 +259,22 @@
         <option value="$PROJECT_DIR$/src/main/java/org/nick/app/HibernateConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/model/Authority.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/model/Form.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/UploadDetails.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/greetings.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/view/TemplateUtility.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/greetings.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/Error.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Results.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java" />
       </list>
     </option>
   </component>
@@ -559,7 +601,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117588000" />
+    <option name="totallyTimeSpent" value="125088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,7 +616,7 @@
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.27985075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.27985075" />
       <window_info id="Structure" order="1" sideWeight="0.5022625" side_tool="true" weight="0.2553305" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -586,8 +628,8 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Application Servers" order="3" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.28169015" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.28169015" />
+      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32936078" />
@@ -605,7 +647,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.23347548" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18123667" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
@@ -658,51 +700,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/form">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/forms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/forms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/forms">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rate">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rate">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
@@ -889,45 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rate">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rates">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rates_rate">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="ctid" enabled="false" position="-1" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/authority">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MAVEN/org.nick:test-task:0.1">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -983,25 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/data">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -1023,16 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/view/TemplateUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Rate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -1043,24 +972,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1068,34 +979,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/GreetingsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/view/TemplateUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="35" />
+    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rate">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/GreetingsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rates">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/rates_rate">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
+          <filtering>
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e43462cd-a70d-4d7e-bfb1-9b9ff59160a1/database/test_task_db/schema/public/table/authority">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2ed2498b-29d1-492b-9e17-2127d4bb679d">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
@@ -1108,13 +1060,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/UploadDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state relative-caret-position="-493">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1124,6 +1084,92 @@
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ResultDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultDetailsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/ResultServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/servlet/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="75" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#38#1" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/model/Forms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/nick/dao/FormsDataAsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
